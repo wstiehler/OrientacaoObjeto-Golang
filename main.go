@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/wstiehler/OrientacaoObjeto/contas"
+	"github.com/wstiehler/OrientacaoObjeto-Golang/contas"
 )
 
 func main() {
