@@ -4,16 +4,17 @@ import (
 	"fmt"
 
 	"github.com/wstiehler/OrientacaoObjeto-Golang/contas"
+	"github.com/wstiehler/OrientacaoObjeto-Golang/clientes"
+
 )
 
 func main() {
-	contaDoDario := contas.ContaCorrente{Titular: "Dario", Saldo: 400}
-	contaDaJuce := contas.ContaCorrente{Titular: "Juce", Saldo: 100}
+	contaDoFillipi := contas.ContaCorrente{Titular: clientes.Titular{
+		Nome : "Fillipi",
+		CPF: "123.456.789-12",
+		Profissao: "Estudante",}
+	NumeroAgencia:123, NumeroConta:123, Saldo:100}
 
-	status := contaDoDario.Transferir(200, &contaDaJuce)
-
-	fmt.Println(status)
-	fmt.Println(contaDoDario)
-	fmt.Println(contaDaJuce)
-
+	fmt.Println(contaDoFillipi)
 }
+

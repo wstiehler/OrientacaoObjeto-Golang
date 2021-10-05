@@ -1,7 +1,9 @@
 package contas
 
+import "github.com/wstiehler/OrientacaoObjeto-Golang/clientes"
+
 type ContaCorrente struct {
-	Titular       Titular
+	Titular       clientes.Titular
 	NumeroAgencia int
 	NumeroConta   int
 	Saldo         float64
